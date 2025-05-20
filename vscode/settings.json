@@ -1,0 +1,78 @@
+{
+  "workbench.colorTheme": "Dracula Pro",
+  "workbench.preferredLightColorTheme": "Dracula Pro (Alucard)",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "'Dank Mono', menlo",
+  "editor.lightbulb.enabled": "off",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 22,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 120,
+  "window.zoomLevel": 0,
+  "vim.enableNeovim": false,
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    { "before": ["<leader>", "e"], "commands": ["workbench.view.explorer"] },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [],
+  "vim.handleKeys": { "<C-d>": false, "<C-u>": false, "<C-f>": false },
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.requireConfig": true,
+  "terminal.integrated.fontFamily": "'Dank Mono'",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.scrollback": 10000,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "explorer.confirmDelete": false,
+  "breadcrumbs.enabled": true,
+  "search.useGlobalIgnoreFiles": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.smoothScrolling": true,
+  "editor.scrollBeyondLastLine": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.guides.indentation": true,
+  "editor.rulers": [80, 100, 120],
+  "editor.suggestSelection": "first",
+  "editor.snippetSuggestions": "top",
+  "typescript.suggest.completeFunctionCalls": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "material-icon-theme.folders.color": "#8aadf4",
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "NOTE"],
+  "errorLens.enabled": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false
+}

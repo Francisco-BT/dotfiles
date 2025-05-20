@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "vscodevim.vim",
+    "catppuccin.catppuccin-vsc",
+    "pkief.material-icon-theme",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "usernamehw.errorlens",
+    "gruntfuggly.todo-tree",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "wix.vscode-import-cost",
+    "orta.vscode-jest",
+    "Prisma.prisma"
+  ]
+}
