@@ -4,6 +4,7 @@
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "breadcrumbs.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.codeActionsOnSave": {
@@ -14,7 +15,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontLigatures": true,
-  "editor.fontFamily": "\"Berkeley Mono\",\"DankMono Nerd Font\", Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "\"Berkeley Mono\",\"DankMono Nerd Font\", \"Berkeley Mono\", Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.suggest.showKeywords": false,
   "editor.formatOnSave": true,
@@ -22,6 +23,7 @@
   "editor.guides.highlightActiveIndentation": true,
   "editor.lightbulb.enabled": "off",
   "editor.folding": true,
+  "editor.showFoldingControls": "never",
   "editor.lineHeight": 22,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
@@ -195,7 +197,5 @@
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "onHover",
   "window.zoomPerWindow": false,
-  "indentRainbow.colorOnWhiteSpaceOnly": true,
-  "indentRainbow.indicatorStyle": "classic",
   "window.zoomLevel": 0.3
 }
