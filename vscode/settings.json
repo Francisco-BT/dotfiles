@@ -8,15 +8,16 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.organizeImports": "explicit"
+    // "source.fixAll": "explicit",
+    // "source.organizeImports": "explicit"
   },
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontLigatures": true,
-  "editor.fontFamily": "\"Berkeley Mono\",\"DankMono Nerd Font\", \"Berkeley Mono\", Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
+  "editor.wordWrap": "off",
+  "editor.fontFamily": "\"DankMono Nerd Font\", \"Berkeley Mono\", Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 16,
   "editor.suggest.showKeywords": false,
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
@@ -39,7 +40,7 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "emmet.showAbbreviationSuggestions": false,
-	"emmet.showExpandedAbbreviation": "never",
+  "emmet.showExpandedAbbreviation": "never",
   "errorLens.enabled": true,
   "explorer.confirmDelete": false,
   "files.insertFinalNewline": true,
@@ -49,7 +50,7 @@
   "git.enableCommitSigning": true,
   "githubPullRequests.pullBranch": "never",
   "javascript.suggest.paths": false,
-  "material-icon-theme.folders.color": "#047fb4",
+  "material-icon-theme.folders.color": "#7862d0",
   "prettier.requireConfig": true,
   "search.exclude": {
     "**/.next": true,
@@ -80,98 +81,47 @@
   "vim.foldfix": true,
   "vim.highlightedyank.enable": true,
   "vim.hlsearch": true,
-  "vim.leader": "<space>",
+  "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "f"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.files.save"]
     },
     {
-      "before": [
-        "<leader>",
-        "t"
-      ],
-      "commands": [
-        "workbench.action.terminal.toggleTerminal"
-      ]
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
     },
     {
-      "before": [
-        "<leader>",
-        "c"
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ]
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
     },
     {
-      "before": [
-        "<leader>",
-        "C"
-      ],
-      "commands": [
-        "workbench.action.closeAllEditors"
-      ]
+      "before": ["<leader>", "C"],
+      "commands": ["workbench.action.closeAllEditors"]
     },
     {
-      "before": [
-        "<leader>",
-        "p"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": [
-        "[",
-        "d"
-      ],
-      "commands": [
-        "editor.action.mark.prev"
-      ]
+      "before": ["[", "d"],
+      "commands": ["editor.action.mark.prev"]
     },
     {
-      "before": [
-        "]",
-        "d"
-      ],
-      "commands": [
-        "editor.action.mark.next"
-      ]
+      "before": ["]", "d"],
+      "commands": ["editor.action.mark.next"]
     },
     {
-      "before": [
-        "<leader>",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
     },
     {
       "before": ["[", "c"],
@@ -180,7 +130,7 @@
     {
       "before": ["]", "c"],
       "commands": ["editor.action.marker.nextInFiles"]
-    },
+    }
   ],
   "vim.showMarksInGutter": true,
   "vim.smartRelativeLine": true,
@@ -191,11 +141,12 @@
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredDarkColorTheme": "Dracula Pro",
-  "workbench.preferredLightColorTheme": "Night Owl Light",
+  "workbench.preferredLightColorTheme": "Dracula Pro (Alucard)",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "onHover",
   "window.zoomPerWindow": false,
-  "window.zoomLevel": 0.3
+  "errorLens.gutterIconsEnabled": true,
+  "scm.diffDecorations": "gutter"
 }
