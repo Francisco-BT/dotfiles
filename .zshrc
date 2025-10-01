@@ -94,3 +94,5 @@ findproc() { ps aux | grep -i $1; }
 if [ -z "$SSH_AUTH_SOCK" ]; then
 	eval "$(ssh-agent -s)"
 fi
+
+eval "$(starship init zsh)"
