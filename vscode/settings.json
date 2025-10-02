@@ -6,7 +6,7 @@
   "breadcrumbs.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.acceptSuggestionOnEnter": "off",
+  "editor.acceptSuggestionOnEnter": "smart",
   "editor.codeActionsOnSave": {
     // "source.fixAll": "explicit",
     // "source.organizeImports": "explicit"
@@ -16,8 +16,9 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontLigatures": true,
   "editor.wordWrap": "off",
-  "editor.fontFamily": "\"DankMono Nerd Font\", \"Berkeley Mono\", Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "\"Berkeley Mono\", \"DankMono Nerd Font\", \"Berkeley Mono\", Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15.6,
+  "editor.fontWeight": "500",
   "editor.suggest.showKeywords": false,
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
@@ -39,6 +40,15 @@
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.hover.delay": 300,
+  "editor.quickSuggestionsDelay": 100,
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.shareSuggestSelections": false,
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
   "errorLens.enabled": true,
@@ -64,10 +74,11 @@
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "DankMono Nerd Font",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.scrollback": 1000000,
   "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "NOTE"],
   "typescript.tsserver.maxTsServerMemory": 8192,
+  "typescript.tsserver.useSyntaxServer": "always",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.suggest.paths": false,
@@ -130,6 +141,14 @@
     {
       "before": ["]", "c"],
       "commands": ["editor.action.marker.nextInFiles"]
+    },
+    {
+      "before": ["[","b"],
+      "commands":  ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["]", "b"],
+      "commands": ["workbench.action.editor.nextChange"]
     }
   ],
   "vim.showMarksInGutter": true,
@@ -141,12 +160,29 @@
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredDarkColorTheme": "Dracula Pro",
-  "workbench.preferredLightColorTheme": "Dracula Pro (Alucard)",
+  "workbench.preferredLightColorTheme": "Atom One Light",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "onHover",
   "window.zoomPerWindow": false,
   "errorLens.gutterIconsEnabled": true,
-  "scm.diffDecorations": "gutter"
+  "scm.diffDecorations": "gutter",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.semanticHighlighting.enabled": false
 }
