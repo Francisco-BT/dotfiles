@@ -4,13 +4,9 @@
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "breadcrumbs.enabled": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "smart",
-  "editor.codeActionsOnSave": {
-    // "source.fixAll": "explicit",
-    // "source.organizeImports": "explicit"
-  },
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -26,12 +22,11 @@
   "editor.lightbulb.enabled": "off",
   "editor.folding": true,
   "editor.showFoldingControls": "never",
-  "editor.lineHeight": 22,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 0,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [100, 120],
   "editor.scrollbar.horizontal": "auto",
   "editor.scrollBeyondLastLine": true,
   "editor.smoothScrolling": true,
@@ -41,17 +36,17 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.quickSuggestions": {
-    "other": "on",
     "comments": "off",
     "strings": "off"
   },
   "editor.hover.delay": 300,
-  "editor.quickSuggestionsDelay": 100,
+  "editor.quickSuggestionsDelay": 200,
   "editor.suggest.localityBonus": true,
   "editor.suggest.shareSuggestSelections": false,
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
   "errorLens.enabled": true,
+  "eslint.validate": ["javascript", "typescript", "typescriptreact"],
   "explorer.confirmDelete": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -61,24 +56,25 @@
   "githubPullRequests.pullBranch": "never",
   "javascript.suggest.paths": false,
   "material-icon-theme.folders.color": "#7862d0",
-  "prettier.requireConfig": true,
+  "prettier.requireConfig": false,
   "search.exclude": {
     "**/.next": true,
-    "**/*.code-search": true,
-    "**/bower_components": true,
-    "**/build": true,
-    "**/dist": true,
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/dist": true
   },
   "search.useGlobalIgnoreFiles": true,
   "telemetry.telemetryLevel": "off",
+  "extensions.ignoreRecommendations": true,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "DankMono Nerd Font",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.scrollback": 1000000,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.enablePersistentSessions": true,
   "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "NOTE"],
   "typescript.tsserver.maxTsServerMemory": 8192,
-  "typescript.tsserver.useSyntaxServer": "always",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.tsserver.useSyntaxServer": "auto",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.suggest.paths": false,
@@ -93,6 +89,40 @@
   "vim.highlightedyank.enable": true,
   "vim.hlsearch": true,
   "vim.leader": ",",
+  "vim.showMarksInGutter": true,
+  "vim.smartRelativeLine": true,
+  "vim.useSystemClipboard": true,
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
+  "window.titleBarStyle": "native",
+  "workbench.activityBar.location": "top",
+  "workbench.editor.showTabs": "single",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredDarkColorTheme": "Dracula Pro",
+  "workbench.preferredLightColorTheme": "Atom One Light",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.tree.renderIndentGuides": "onHover",
+  "window.zoomPerWindow": false,
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.fontSize": "12px",
+  "errorLens.fontFamily": "Berkeley Mono",
+  "scm.diffDecorations": "gutter",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+  "[json]": {
+    "editor.wordWrap": "on"
+  },
+  "[html]": {
+    "emmet.showExpandedAbbreviation": "always"
+  },
+  "vim.handleKeys": {
+    "<C-c>": false
+  },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "f"],
@@ -143,46 +173,26 @@
       "commands": ["editor.action.marker.nextInFiles"]
     },
     {
-      "before": ["[","b"],
-      "commands":  ["workbench.action.editor.previousChange"]
+      "before": ["[", "b"],
+      "commands": ["workbench.action.editor.previousChange"]
     },
     {
       "before": ["]", "b"],
       "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>", "N"],
+      "commands": ["workbench.action.previousEditor"]
     }
   ],
-  "vim.showMarksInGutter": true,
-  "vim.smartRelativeLine": true,
-  "window.autoDetectColorScheme": true,
-  "window.commandCenter": false,
-  "window.titleBarStyle": "native",
-  "workbench.activityBar.location": "top",
-  "workbench.editor.showTabs": "single",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.preferredDarkColorTheme": "Dracula Pro",
-  "workbench.preferredLightColorTheme": "Atom One Light",
-  "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none",
-  "workbench.tips.enabled": false,
-  "workbench.tree.renderIndentGuides": "onHover",
-  "window.zoomPerWindow": false,
-  "errorLens.gutterIconsEnabled": true,
-  "scm.diffDecorations": "gutter",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "editor.semanticHighlighting.enabled": false
+  "settingsSync.ignoredSettings": [
+    "terminal.integrated.defaultProfile.osx",
+    "editor.fontFamily",
+    "editor.fontSize"
+  ],
+  "task.quickOpen.showAll": false
 }
