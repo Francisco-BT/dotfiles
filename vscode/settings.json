@@ -4,7 +4,6 @@
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "breadcrumbs.enabled": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.cursorBlinking": "expand",
@@ -13,7 +12,7 @@
   "editor.fontLigatures": true,
   "editor.wordWrap": "off",
   "editor.fontFamily": "\"Berkeley Mono\", \"DankMono Nerd Font\", \"Berkeley Mono\", Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 15.6,
+  "editor.fontSize": 15.5,
   "editor.fontWeight": "500",
   "editor.suggest.showKeywords": false,
   "editor.formatOnSave": true,
@@ -62,7 +61,7 @@
     "**/node_modules": true,
     "**/dist": true
   },
-  "search.useGlobalIgnoreFiles": true,
+  // "search.useGlobalIgnoreFiles": true,
   "telemetry.telemetryLevel": "off",
   "extensions.ignoreRecommendations": true,
   "terminal.integrated.defaultProfile.osx": "zsh",
@@ -97,9 +96,8 @@
   "window.titleBarStyle": "native",
   "workbench.activityBar.location": "top",
   "workbench.editor.showTabs": "single",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredDarkColorTheme": "Dracula Pro",
-  "workbench.preferredLightColorTheme": "Atom One Light",
+  "workbench.preferredLightColorTheme": "Default Dark Modern",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
@@ -194,5 +192,32 @@
     "editor.fontFamily",
     "editor.fontSize"
   ],
-  "task.quickOpen.showAll": false
+  "task.quickOpen.showAll": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "github.copilot.enable": {
+    "*": false
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#a99f70",
+    "editorBracketHighlight.foreground2": "#66CCBB",
+    "editorBracketHighlight.foreground3": "#FF80BF",
+    "editorBracketHighlight.foreground4": "#AA99FF",
+    "editorBracketHighlight.foreground5": "#70A99F",
+    "editorBracketHighlight.foreground6": "#6ECC66"
+  },
+  "workbench.iconTheme": "a-file-icon-vscode"
 }
